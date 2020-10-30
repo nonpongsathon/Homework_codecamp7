@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .center{
+            text-align:center;
+        }
+        p {
+            font-size:20px;
+        }
+        .pagination {
+            display:inline-block;
+
+        }
+       
+        div > ul > li {
+        
+            border: 1px solid #4496d2;
+            list-style: none;
+            padding:0px;
+            margin:0px;
+            text-align: center;
+        }
+        .dropdown {
+            position:relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display:none;
+            position: absolute;
+            width:200px;
+            height:100px;
+            background-color: salmon;
+        }
+        .dropdown:hover .dropdown-content{
+            display:block;
+        }
+        
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="center">Tooltips</h1>
+    <p>Tooltips คือคำแนะนำหรือคำอธิบายของ element ที่เรานำ mouse ไปชี้</p>
+    <p>Ex.</p><br>
+    <p class ="center" title="I got this!">Hover me to see the message!</p>
+    <hr>
+    <h1 class="center">Pagination</h1>
+    <p>Pagination คือตัวเลบอกหน้าของ pages ในกรณีที่เว็บนั้นๆมีหลายหน้า สามารถใส่ลิ้งค์เพื่อกดเปลี่ยนไปยังหน้าต่างๆได้</p>
+    <p>Ex.</p><br>
+    <div class="pagination">
+<a href="#">&laquo;</a>
+<a href="#">1</a>
+<a href="#">2</a>
+<a href="#">3</a>
+<a href="#">&raquo;</a>
+    </div>
+    
+    <hr>
+
+    <h1 class="center">Navigation bar</h1>
+    <p>Navigation bar คือข้อความที่บอกถึงองค์ประกอบของเว็บไซต์ในแต่ละส่วน เพื่อให้ผู้ใช้เข้าถึงข้อมูลที่ต้องการได้ง่าย</p>
+    <p>Ex.</p><br>
+    <div>
+        <ul>
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#">บริการของเรา</a></li>
+            <li><a href="#">คลังภาพ</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </div>
+    <hr>
+
+    <h1 class="center">Dropdown</h1>
+    <p>dropdown คือข้อความที่แสดงเมื่อนำ mouse ไปชี้ คล้ายๆกับ Tooltips</p>
+    <p>Ex.</p><br>
+    <div class="dropdown">
+        <h5>Hover me to see dropdown</h5>
+        <div class="dropdown-content">I got this!</div>
+    </div>
+    <hr>
+
+
+</body>
+</html>

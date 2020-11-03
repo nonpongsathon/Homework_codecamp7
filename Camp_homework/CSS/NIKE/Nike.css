@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.tophead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    padding: 1px;
+
+}
+
+.navlinkstop {
+    list-style-type: none;
+}
+
+li,
+.tophead a {
+    color: black;
+    font-size: 12px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navlinkstop li {
+    display: inline-block;
+}
+
+.tophead img {
+    margin-left: 30px;
+}
+
+.tophead ul {
+    margin-right: 20px;
+}
+.search {
+    width:120px;
+    height:30px;
+    padding:0 5px;
+    background-color: lightgrey;
+    border:none;
+}
+.midhead {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2px;
+    margin:0 10px 0 10px;
+}
+.navlinksmid li{
+    display:inline-block;
+    font-size:16px;
+    padding:10px;
+}
+.search-heart-bag input, i{
+    padding:5px;
+}
+.promotion {
+    padding:2px;
+    background-color: lightgray;
+    text-align: center;
+
+}
+.promotion p {
+    font-size:12px;
+}
+div.shoes-cloth-equipment {
+   
+    margin: 30px 0;
+    position:sticky;
+}
+.shoes-cloth-equipment div {
+    font-size:25px;
+    float:left;
+    margin-left:30px;
+    
+}
+.navlinksbot {
+    text-align:center;
+}
+.navlinksbot ul {
+    list-style-type: none;
+}
+.navlinksbot li {
+    display:inline-block;
+    font-size: 16px;
+    padding:10px;
+}
+.content {
+    margin:0 30px;
+}
+
+.content .shoespic {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+} 
+.speed {
+    margin:40px auto;
+    text-align:center;
+    
+}
+.speed p {
+    padding:3px;
+}
+.buybutton {
+    width:70px;
+    height:40px;
+    background-color:black;
+    color:white;
+    text-align: center;
+    border:1px solid black;
+    border-radius: 30%;
+    margin-top: 3px;
+    padding:10px;
+    cursor: pointer;
+}
+.popular {
+    font-size:25px;
+    text-align: left;
+    margin:25px 0;
+}
+.flex-container-popshoe {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+.flex-container-popshoe div img {
+    width: 450px;
+    height:auto;
+}
+.flex-container-popshoe span {
+    padding:3px;
+}
+.flex-container-popshoe .price {
+    float:right;
+}

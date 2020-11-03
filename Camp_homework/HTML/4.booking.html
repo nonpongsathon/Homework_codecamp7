@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang=en>
+<style>
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        font-family: Oswald;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .box {
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+        border: 2px solid red;
+        border-radius: 10%;
+
+    }
+
+    .grid-container {
+        display: grid;
+
+        padding: 2px;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 75px 75px;
+        grid-gap: 10px;
+        justify-content: center;
+
+    }
+
+    .grid-items {
+
+        padding-left: 2px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        padding: 2px;
+        justify-content: center;
+
+
+    }
+
+    .flex-items-1,
+    .flex-items-2,
+    .flex-items-3,
+    .flex-items-4 {
+
+        width: 70px;
+        height: 50px;
+        margin: 4px;
+
+    }
+
+    .flex-items-1>input {
+        width: 50px;
+    }
+
+    .flex-items-2>input {
+        width: 50px;
+    }
+
+    .flex-items-3>input {
+        width: 50px;
+    }
+
+    .flex-items-4 {
+        color: coral;
+
+    }
+
+    .flex-items-4>input {
+        width: 50px;
+    }
+
+    .search {
+        text-decoration: none;
+        text-align: center;
+        margin-left: 45px;
+        border: 1px solid black;
+        border-radius: 5%;
+        width: 80px;
+        height: 30px;
+        padding-top: 10px;
+        background-color: orangered;
+        color: white;
+        font-size: 14px;
+        
+    }
+</style>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <title>Booking</title>
+</head>
+
+<body>
+    <div class="back">
+        <div class="box">
+            <form>
+                <div class="grid-container">
+                    <div class='grid-items'>
+                        <label for="departure">Flying from</label><br>
+                        <select name="departure" id="departure">
+                            <option value="Karachi, Pakistan">Karachi, Pakistan</option>
+                            <option value="Bangkok, Thailand">Bangkok, Thailand</option>
+                            <option value="Tokyo, Japan">Tokyo, Japan</option>
+                        </select>
+                    </div>
+                    <div class='grid-items'>
+                        <label for="destination">To</label><br>
+                        <select name="destination" id="destination">
+                            <option value="Karachi, Pakistan">Karachi, Pakistan</option>
+                            <option value="Bangkok, Thailand">Bangkok, Thailand</option>
+                            <option value="Tokyo, Japan">Tokyo, Japan</option>
+                        </select>
+                    </div>
+
+                    <div class='grid-items'>
+                        <label for="depart-date">Departing</label><br>
+                        <input type="date">
+                    </div>
+                    <div class='grid-items'>
+                        <label for="returning-date">Returning</label><br>
+                        <input type="date">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-items-1">
+                        <label for="adult">Adult</label><br>
+                        <input type="number" name="adult" id="adult">
+
+                    </div>
+                    <div class="flex-items-2">
+                        <label for="child">Child</label><br>
+                        <input type="number" name="child" id="child">
+                    </div>
+                    <div class="flex-items-3">
+                        <label for="infant">Infant</label><br>
+                        <input type="number" name="infant" id="infant">
+                    </div>
+                    <div class="flex-items-4">
+                        <label for="currency">Currency</label><br>
+                        <select name="currency" id="currency">
+                            <option value="PKR">PKR</option>
+                            <option value="THB">THB</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>
+
+                </div>
+                <br>
+                <a href='#'><div class="search">
+                    SEARCH
+                </div></a>
+
+            </form>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

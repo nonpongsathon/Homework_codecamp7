@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 800px;
+        height: auto;
+        border: 3px solid grey;
+
+    }
+
+    sup {
+        color: red;
+    }
+
+    .info {
+        margin: 30px 50px;
+    }
+
+    .question {
+
+        background-color: orange;
+        border: 1px solid black;
+        padding: 1px 3px;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .formsetup {
+        width: 100%;
+        height: auto;
+        background-color: lightgrey;
+        color: black;
+        padding: 0.1px;
+        border-top: 2px solid grey;
+    }
+
+    p {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    select {
+        width: 150px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class='info'>
+                <label for="name">Name<sup>*</sup>:</label>
+                <input type="text" style='margin-left:100px'>
+                <span class='question'><a href='#'>?</a></span>
+                <br>
+                <label for="tabtext">Tab Text<sup>*</sup>:</label>
+                <input type="text" style='margin-left:82px'>
+                <span class='question'><a href='#'>?</a></span>
+                <br>
+                <label for="url" style='margin-right:107px'>URL<sup>*</sup>:</label>
+                http://www.wizehive.com/webform/<input type="text">
+                <br>
+                <br>
+
+
+                <div class='formsetup'>
+                    <p>FORM SETUP</p>
+                </div>
+                <br>
+
+                <label for="form" style='margin-right:112px'>Form:</label>
+                <select name="form" id="form">
+                    <option value=""></option>
+                </select>
+                <span><input type="button" value='Edit' class='button'></span>
+
+                <br>
+
+                <label for="logo" style='margin-right:112px'>Logo:</label>
+                no logo uploaded
+                <span><input type="button" value='Upload Logo' class='button' style='margin-left:38px;'></span>
+
+                <br>
+                <label for="template_text" style='margin-right:55px'>Template Text:</label>
+                <select name="template_text" id="template_text">
+                    <option value="English">English</option>
+                </select>
+                <span><input type="button" value='Edit' class='button'></span>
+                <br>
+
+                <label for="review_form" style='margin-right:58px'>Review Form:</label>
+                <select name="review_form" id="review_form">
+                    <option value="Default">Default</option>
+                </select>
+
+                <br>
+
+                <label for="Review_score" style='margin-right:56px'>Review Score:</label>
+                <select name="Review_score" id="Review_score">
+                    <option value="Rating">Rating</option>
+                </select>
+                <span><input type="button" value='Reload Fields' class='button'></span>
+
+                <br>
+
+                <label for="scoring_type" style='margin-right:60px'>Scoring Type:</label>
+                <select name="scoring_type" id="scoring_type" style='width:75px'>
+                    <option value="Average">Average</option>
+                </select>
+                <br>
+                <label for="max_score" style='margin-right:76px'>Max Score:</label>
+                <input type="text" value='4.0'>
+
+
+
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>

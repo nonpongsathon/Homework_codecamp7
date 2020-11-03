@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang='en'>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+    h1,
+    h3 {
+        margin: 10px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>review_CSS</title>
+
+</head>
+
+<body>
+    <table style='width:100%'>
+        <tr>
+            <th>CSS syntax</th>
+            <th>CSS writing</th>
+            <th>CSS selector</th>
+            <th>Combinator</th>
+        </tr>
+
+        <tr>
+            <td>CSS Syntax ประกอบไปด้วย<br>
+                <ul>
+                    <li>Selector</li>
+                    <li>Declaration</li>
+                    <li>Property</li>
+                    <li>Value</li>
+                </ul>
+            </td>
+            <td>
+                การเขียน CSS มี 3 แบบ คือ <br>
+                <ol>
+                    <li>Internal</li>
+                    <li>External</li>
+                    <li>Inline</li>
+                </ol>
+            </td>
+            <td>CSS selectors มี 5 แบบ ได้แก่ <br>
+                <ol>
+                    <li>Simple selectors</li>
+                    <li>Combinator selectors</li>
+                    <li>Pseudo-class selectors</li>
+                    <li>Pseudo-elements selectors</li>
+                    <li>Attribute selectors</li>
+                </ol>
+            </td>
+            <td>Combinators มี 4 แบบ ได้แก่ <br>
+                <ol>
+                    <li>descendant selector (space)</li>
+                    <li>child selector (>)</li>
+                    <li>adjacent sibling selector (+)</li>
+                    <li>general sibling selector (~)</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <h1>For example css syntax</h1>
+        <h3>h1 {color:blue;}</h3>
+    </div>
+    <div>
+        <h1>For example CSS writing</h1>
+        <h3>Internal เขียนภายในไฟล์ html</h3>
+        <h3>External เขียนนอกไฟล์ html แล้ว link เข้ามา</h3>
+        <h3>Inline เขียนต่อจาก tag เลย</h3>
+    </div>
+    <div>
+        <h1>For example CSS selectors</h1>
+        <h3>simple - name,id,class</h3>
+        <h3>combinator - div p,div>p,div+p,div~p</h3>
+        <h3>pseudo class - a:visited, a:hover, a:active, a:link</h3>
+        <h3>pseudo element - p::first-letter, p::first-line, p::before, p::after</h3>
+        <h3>attribute - a[target='_blank'] {...}</h3>
+    </div>
+    <div>
+        <h1>For example CSS Combinators</h1>
+        <h3>div p {...}</h3>
+        <h3>div>p {...}</h3>
+        <h3>div+p {...}</h3>
+        <h3>div~p {...}</h3>
+    </div>
+</body>
+
+</html>

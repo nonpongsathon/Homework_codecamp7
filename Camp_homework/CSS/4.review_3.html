@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+    th {
+        text-align: center;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>review_css_3</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Value ใน property</th>
+            <th>grid และ flex ต่างกันอย่างไร</th>
+            <th>justify และ align ต่างกันอย่างไร</th>
+        </tr>
+
+        <tr>
+            <td>
+                <ul>
+                    <li>inline อยู่บรรทัดเดียวกัน เหมือน span</li>
+                    <li>block อยู่คนละบรรทัดเหมือน p</li>
+                    <li>contents ทำให้ element เป็น contents ปรับ margin,padding,border,background ไม่ได้</li>
+                    <li>flex จัดรูปแบบ flex</li>
+                    <li>grid จัดรูปแบบ grid</li>
+                    <li>inline-(block,flex,grid,table)</li>
+                    <li>run-in ขึ้นอยู่กับเนื้อหา</li>
+                    <li>none ไม่แสดงผล</li>
+                </ul>
+            </td>
+            <td>
+                - flex ใช้ในการจัด layout ที่มี 1 มิติ (แนวตั้งหรือแนวนอน) และ grid ใช้เพื่อจัด layout ที่มี 2 มิติ
+                (มีทั้งแนวตั้งและแนวนอน)
+            </td>
+            <td>
+                - justify-content ใช้กำหนด value ของ flex ในการจัดแนวนอน และใช้เหมือน align-content(flex)
+                หรือกำหนด value ของ grid ในแนวนอน ใช้เหมือนกับ align-content (grid)
+                <br>
+                -align ใช้กับ flex กำหนดการจัดแนวตั้ง
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        margin: 30px auto;
+        display: block;
+        min-width: 50px;
+    }
+
+    .item {
+        border: 1px solid black;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .item .topic,
+    .item .content {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .last {
+        border: 1px solid black;
+        margin: 20px;
+        padding: 10px;
+        min-width: 100px;
+        text-align: center;
+    }
+
+    .last .topic,
+    .last .content {
+        border: 1px solid black;
+        margin: 10px;
+        padding: 10px;
+        min-width: 100px;
+
+    }
+
+    @media only screen and (min-width:800px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            margin: 0 20px;
+        }
+    }
+
+    @media only screen and (min-width:480px) and (max-width: 799px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            margin: 0 20px;
+        }
+    }
+
+    @media only screen and (max-width: 479px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            margin: 0 20px;
+        }
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquery</title>
+</head>
+
+<body>
+    <img src="https://www.fokkerservices.com/media/ajtbmeik/airbusa320b.jpg?center=0.49731124032702312,0.62645003150460921&mode=crop&width=422&height=324&rnd=132399684681700000"
+        alt="Aircraft">
+    <div class="grid-container">
+        <div class="item">
+            <div class='topic'>Lorem ipsum dolor sit amet.</div>
+            <div class='content'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aperiam optio quisquam
+                commodi quod nemo? Adipisci voluptates sapiente praesentium expedita nihil assumenda fuga odio
+                obcaecati?</div>
+        </div>
+        <div class="item">
+            <div class='topic'>Lorem ipsum dolor sit amet.</div>
+            <div class='content'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aperiam optio quisquam
+                commodi quod nemo? Adipisci voluptates sapiente praesentium expedita nihil assumenda fuga odio
+                obcaecati?</div>
+        </div>
+        <div class="item">
+            <div class='topic'>Lorem ipsum dolor sit amet.</div>
+            <div class='content'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aperiam optio quisquam
+                commodi quod nemo? Adipisci voluptates sapiente praesentium expedita nihil assumenda fuga odio
+                obcaecati?</div>
+        </div>
+        <div class="item">
+            <div class='topic'>Lorem ipsum dolor sit amet.</div>
+            <div class='content'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aperiam optio quisquam
+                commodi quod nemo? Adipisci voluptates sapiente praesentium expedita nihil assumenda fuga odio
+                obcaecati?</div>
+        </div>
+        <div class="item">
+            <div class='topic'>Lorem ipsum dolor sit amet.</div>
+            <div class='content'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aperiam optio quisquam
+                commodi quod nemo? Adipisci voluptates sapiente praesentium expedita nihil assumenda fuga odio
+                obcaecati?</div>
+        </div>
+        <div class="item">
+            <div class='topic'>Lorem ipsum dolor sit amet.</div>
+            <div class='content'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aperiam optio quisquam
+                commodi quod nemo? Adipisci voluptates sapiente praesentium expedita nihil assumenda fuga odio
+                obcaecati?</div>
+        </div>
+
+    </div>
+    <div class='last'>
+        <div class='topic'>Lorem ipsum dolor sit amet.</div>
+        <div class='content'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aperiam optio quisquam
+            commodi quod nemo? Adipisci voluptates sapiente praesentium expedita nihil assumenda fuga odio obcaecati?
+        </div>
+
+    </div>
+</body>
+
+</html>

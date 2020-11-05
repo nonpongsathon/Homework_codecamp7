@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        max-width: 980px;
+        width: 100%;
+        margin: 50px auto;
+
+    }
+
+    .grid-container {
+        max-width: 250px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+
+    }
+
+    .grid-item {
+        color: red;
+        text-align: left;
+        border: 1px dotted black;
+        padding: 5px 25px 5px 5px;
+    }
+
+    .grid-item:nth-child(1),
+    .grid-item:nth-child(2) {
+        font-weight: bold;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phonebook.html</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="grid-container">
+                <div class="grid-item">Name</div>
+                <div class="grid-item">Tel no.</div>
+                <div class="grid-item">TA Tle</div>
+                <div class="grid-item">083-4284942</div>
+                <div class="grid-item">KFC</div>
+                <div class="grid-item">1150</div>
+                <div class="grid-item">Pizza Hut</div>
+                <div class="grid-item">1112</div>
+                <div class="grid-item">Yayoi-ยาโยอิ</div>
+                <div class="grid-item">1642</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

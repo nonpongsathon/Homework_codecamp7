@@ -1,116 +1,226 @@
 body {
     margin:0;
     padding:0;
-    width:100%;
-    background-image: url('https://www.ikea.com/th/en/images/products/smycka-artificial-flower-rose-red__0903311_PE596728_S5.JPG?f=s');
-    background-repeat:no-repeat;
-    background-size:100% 700px;
-    
+    box-sizing: border-box;
+    background-color:#FFF4F1 ;
 }
-.header {
-    margin:0;
-    padding:0;
-    position:relative;
-    min-width:200px;
+.container-all {
+    max-width:100%;
+    width:100%;
     height:auto;
+    position:relative;
+}
+.menu {
+    z-index:99;
+    cursor: pointer;
 }
 .p {
-    position: fixed;
-    left:50px;
-    top:20px;
-    color: darkorange;
-    font-weight: bold;
-    font-size:35px;
-    cursor: pointer;
+    color:darkorange;
+    font-size:30px;
+    position:fixed;
+    top:10px;
+    left:60px;
 }
 .about {
-    position: fixed;
-    right:40px;
-    top:0px;
-    text-align: center;
-    cursor: pointer;
+    position:fixed;
+    top:0;
+    right:50px;
+    text-align:center;
 }
-.about .top {
+.about-box {
     width:40px;
     height:20px;
     background-color: darkorange;
-   color:white;
+    
+    color:white;
 }
-.about .bottom {
+.about-word {
     font-size:10px;
-    margin-top:4px;
-    color:grey;
+    padding-top:3px;
+    color: #333333;
 }
 .pimclick {
     position:fixed;
-    transform:rotate(270deg);
-    font-size:25px;
+    font-size:30px;
+    transform: rotate(270deg);
     color:darkorange;
-    top:40%;
-    font-weight: bold;
-    cursor: pointer;
+    top:45%;
+    left:0;
 }
 .pimclick sup {
     font-size:12px;
 }
-.banner {
-    text-align:center;
-    margin:7% auto 0 auto;
+.sendmessage {
+    width:100px;
+    height:30px;
+    background-color: darkorange;
     color:white;
-    min-width:200px;
+    text-align: center;
+    font-size:16px;
+    padding-top:10px;
+    position:fixed;
+    bottom: 0;
+    right:20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;  
 }
-.topbanner {
-    min-width: min-content;
+
+.header-container {
+    width:100%;
+    height:750px;
+    background-image: url('https://www.ikea.com/th/en/images/products/smycka-artificial-flower-rose-red__0903311_PE596728_S5.JPG?f=s');
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index:1;
+}
+.logo, .logo2 {
+    font-size:150px;
+    text-align:center;
+    color:black;
+    line-height: 150px;
+}
+.logo {
     font-weight: bold;
-    font-size:150px;
+    padding-top:100px;
 }
-.botbanner {
-    font-size:150px;
-    font-weight:normal;
+.logo sup {
+    font-size:20px;
 }
-.container {
-    display:block;
-    margin:100px 300px;
-    min-width: 300px;
+.logo2 {
+    font-weight: lighter;
+    margin:0 90px;
+    font-size:120px;
+}
+
+.form-contact {
+    max-width:60%;
+    width:60%;
     height:auto;
     background-color: white;
     border:none;
-    border-radius:100px;
-    box-shadow: 5px 10px lightgray;
+    border-radius: 20px;
+    box-shadow: 4px 4px lightgray;
+    z-index:50;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:-150px;
 }
-.contact-us-today {
-    padding:30px;
+.title {
+    color:black;
     font-size:60px;
-    text-align: center;
-    margin:10px;
+    width:fit-content;
+    margin:50px auto;   
 }
-
-
-@media only screen and (min-width:640px) {
-    .grid-container {
+.title span:nth-child(2) {
+    color:red;
+}
+.grid-form-container {
     display:grid;
-    grid-template-columns: auto auto;
-    grid-template-rows:auto auto auto auto;
-    margin:30px 30px;
-    grid-gap:20px;
-    
-    }
-    .item-3 {
-    grid-column-start: 1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,100px);
+    margin:0 40px;
+}
+.grid-form-item {
+    font-size:22px;
+    padding:10px;
+    margin-bottom: 0;
+    color: #979797
+}
+.grid-form-item input {
+    width:100%;
+    height:22px;
+}
+.grid-form-item:nth-child(3) {
+    grid-column-start:1;
     grid-column-end:3;
-    }
-    .item-4 {
+}
+
+.grid-form-item:nth-child(4) {
+    grid-column-start:1;
+    grid-column-end:3;
     grid-row-start:3;
-    grid-row-end:4;
+    grid-row-end:5;
+}
+.grid-form-item:nth-child(4) textarea {
+    width:100%;
+}
+
+.grid-form-item:nth-child(5) {
     grid-column-start: 1;
-    grid-column-end:3 ;
-    }
-    .item-1 input, .item-2 input {
-        width:400px;
-    }
-    .item-
+    grid-column-end: 3;
+    margin:20px auto;
+    width:150px;
+    height:50px;
+    font-size:30px;
+    color:white;
+    background-color: red;
+    border:none;
+    border-radius: 5px;
+    padding:5px;
+    cursor: pointer;
+    text-transform:uppercase;
+
+}
+.word-container {
+    width:100%;
+    height:auto;
+}
+.word {
+    width:60%;
+    height:auto;
+    font-size:25px;
+    margin:60px auto;
+    text-align:justify;
+    line-height: 30px;
+    z-index:60px;
+    color: #979797;
+}
+.vdo-container {
+    width:100%;
+    height:auto;
+}
+.vdo {
+    width:60%;
+    margin:0 auto; 
+}
+.vdo img{
+    width:100%;
+    height:40vh;
+}
+.work-container {
+    width:100%;
+    height:auto;
+}
+.work-grid-container {
+    width:60%;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap:10px;
+    padding:0;
+
+} 
+.work-grid-item .work-head { 
+    font-size:45px;
+    color:red;
+}
+.work-grid-item {
+margin:0 auto 0 0;
+    text-align:left;
     
 }
-.item-1, .item-2, .item-3, .item-4 {
-    border:1px solid black;
-    }
+.work-head h1 {
+    margin:0 auto 0 0;
+}
+
+.work-grid-item .work-list ul {
+    list-style-type: none;
+
+}
+.work-grid-item .work-list ul li {
+    font-size:20px;
+    padding-left:0;
+}
+
+

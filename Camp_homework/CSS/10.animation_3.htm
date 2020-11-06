@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .box1 {
+        width: 100px;
+        height: 100px;
+        animation:box1 alternate infinite 5s;
+    }
+
+    .box2 {
+        width: 100px;
+        height: 100px;
+        animation:box2 alternate 3 5s;
+    }
+
+    @keyframes box1 {
+        0% {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        20% {
+            background-color: red;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        40% {
+            background-color: green;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        60% {
+            background-color: brown;
+            position: relative;
+            top: 150px;
+            left: 150px;
+        }
+
+        80% {
+            background-color: cyan;
+            position: relative;
+            top: 200px;
+            left: 200px;
+        }
+
+        100% {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            position: relative;
+            top: 250px;
+            left: 250px;
+        }
+    }
+
+    @keyframes box2 {
+        0% {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 0;
+            right: 0;
+            visibility:visible;
+        }
+
+        20% {
+            background-color: red;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            visibility:hidden;
+        }
+
+        40% {
+            background-color: green;
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            visibility:visible;
+        }
+
+        60% {
+            background-color: brown;
+            position: absolute;
+            top: 150px;
+            right: 150px;
+            visibility:hidden;
+            opacity: 0.5;
+        }
+
+        80% {
+            background-color: cyan;
+            position: absolute;
+            top: 200px;
+            right: 200px;
+            visibility:visible;
+        }
+
+        100% {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            position: absolute;
+            top: 250px;
+            right: 250px;
+            opacity:0;
+        }
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation_3</title>
+</head>
+
+<body>
+    <div class='box1'></div>
+    <div class="box2"></div>
+</body>
+
+</html>

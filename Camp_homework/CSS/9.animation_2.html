@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    div {
+        width: 100px;
+        height: 100px;
+        animation-name: box;
+        animation-duration: 5s;
+        /* animation-direction: normal; */
+        /* animation-direction: reverse; */
+        animation-direction: alternate;
+        animation-iteration-count: 3;
+    }
+
+    @keyframes box {
+        0% {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        20% {
+            background-color: red;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        40% {
+            background-color: green;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        60% {
+            background-color: brown;
+            position: relative;
+            top: 150px;
+            left: 150px;
+        }
+
+        80% {
+            background-color: cyan;
+            position: relative;
+            top: 200px;
+            left: 200px;
+        }
+
+        100% {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            position: relative;
+            top: 250px;
+            left: 250px;
+        }
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation_2</title>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

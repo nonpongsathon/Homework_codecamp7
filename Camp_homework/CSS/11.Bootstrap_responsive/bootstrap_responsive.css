@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  margin: 0;
+}
+header .p {
+  position: fixed;
+  left: 80px;
+  top: 15px;
+  color: orangered;
+  font-weight: bold;
+  font-size: 50px;
+}
+header .about {
+  position: fixed;
+  top: 0;
+  right: 50px;
+}
+header .about .top {
+  width: 50px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+header .about .bot {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 3px;
+}
+header .pimclick sup {
+  font-size: 12px;
+}
+header .pimclick {
+  font-size: 40px;
+  color: orangered;
+  font-weight: bold;
+  transform: rotate(270deg);
+  position: fixed;
+  left: 0px;
+  top: 40%;
+}
+header .message {
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: orangered;
+  text-align: center;
+  padding-top: 2px;
+  border-radius: 5px;
+}
+header {
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 40%;
+  width: 80%;
+}
+
+.today {
+  color: red;
+}

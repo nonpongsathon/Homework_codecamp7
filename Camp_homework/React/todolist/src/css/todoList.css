@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(44, 44, 240);
+  position: relative;
+}
+
+.title {
+  color: white;
+  vertical-align: bottom;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0 0 0 10px;
+  font-weight: normal;
+}
+
+.list {
+  width: 100%;
+}
+
+.add-item {
+  width: 100%;
+  text-align: start;
+  padding: 15px;
+  color: darkblue;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.button {
+  width: 100%;
+}
+
+.todo-task {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+
+  text-align: left;
+}
+.todo-date {
+  color: rgb(53, 53, 248);
+  padding: 0;
+  margin: 0;
+
+  text-align: left;
+}
